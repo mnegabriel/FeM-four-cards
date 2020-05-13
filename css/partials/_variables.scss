@@ -1,0 +1,22 @@
+//Media queries
+$mq-sm:375px;
+$mq-lg:1440px;
+//
+//color
+//--primary
+$cp-red: hsl(0, 78%, 62%);
+$cp-cyan: hsl(180, 62%, 55%);
+$cp-orange: hsl(34, 97%, 64%);
+$cp-blue: hsl(212, 86%, 64%);
+//--secondary
+$cs-darkBlue: hsl(234, 12%, 34%);
+$cs-grayBlue: hsl(229, 6%, 66%);
+$cs-lightGray: hsl(0, 0%, 98%);
+//
+//Font
+@import url(https://fonts.google.com/specimen/Poppins);
+$font: 'Poppins',
+sans-serif;
+///////Weights: 200, 400, 600
+//
+//Font size: 15px
