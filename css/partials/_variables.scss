@@ -10,13 +10,17 @@ $cp-orange: hsl(34, 97%, 64%);
 $cp-blue: hsl(212, 86%, 64%);
 //--secondary
 $cs-darkBlue: hsl(234, 12%, 34%);
+$cs-shadow: hsla(234, 12%, 34%, 0.2);
 $cs-grayBlue: hsl(229, 6%, 66%);
 $cs-lightGray: hsl(0, 0%, 98%);
 //
 //Font
-@import url(https://fonts.google.com/specimen/Poppins);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 $font: 'Poppins',
 sans-serif;
+$font-light: 200;
+$font-regular: 400;
+$font-bold: 600;
 ///////Weights: 200, 400, 600
 //
 //Font size: 15px

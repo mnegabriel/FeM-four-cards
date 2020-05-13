@@ -1,1 +1,17 @@
 @import "./partials/variables";
+@import "./partials/base";
+@import "./partials/hero";
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px 1px $cs-shadow;
+    padding: 20px;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    &__text {}
+    &__svg {
+        align-self: flex-end;
+        margin-right: 0;
+    }
+}

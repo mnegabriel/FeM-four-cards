@@ -1,0 +1,17 @@
+.hero {
+    text-align: center;
+    color: $cs-darkBlue;
+    margin: 120px 0 70px;
+    // margin-top: 70px;
+    // margin-bottom: 70px;
+    &__title {
+        font-weight: $font-light;
+        & span {
+            font-weight: $font-bold;
+        }
+    }
+    &__text {
+        color: $cs-grayBlue;
+        font-size: 1.2em;
+    }
+}
