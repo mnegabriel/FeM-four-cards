@@ -1,0 +1,38 @@
+.card {
+    background-color: white;
+    border-radius: 10px;
+    height: 200px;
+    width: 331px;
+    padding: 36px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    //
+    &__content {
+        color: $cs-darkBlue;
+        line-height: 1.8em;
+        & p {
+            margin-top: .5em;
+            opacity: 0.5;
+        }
+    }
+    &__text {}
+    &__svg {
+        align-self: flex-end;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    &.super {
+        @include shadowIn($cp-cyan);
+    }
+    &.team {
+        @include shadowIn($cp-red);
+    }
+    &.karma {
+        @include shadowIn($cp-orange);
+    }
+    &.calc {
+        @include shadowIn($cp-blue);
+    }
+}

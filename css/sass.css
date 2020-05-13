@@ -11,14 +11,16 @@ body {
 .hero {
   text-align: center;
   color: #4c4e61;
-  margin: 120px 0 70px;
+  margin: 120px auto 70px;
+  max-width: 600px;
 }
 
 .hero__title {
   font-weight: 200;
 }
 
-.hero__title span {
+.hero__title + h1 {
+  margin-top: 4px;
   font-weight: 600;
 }
 
@@ -30,10 +32,10 @@ body {
 .card {
   background-color: white;
   border-radius: 10px;
-  -webkit-box-shadow: 0 4px 12px 1px rgba(76, 78, 97, 0.2);
-          box-shadow: 0 4px 12px 1px rgba(76, 78, 97, 0.2);
-  padding: 20px;
-  margin: 40px 0;
+  height: 200px;
+  width: 331px;
+  padding: 36px;
+  margin: 40px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,11 +43,45 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__content {
+  color: #4c4e61;
+  line-height: 1.8em;
+}
+
+.card__content p {
+  margin-top: .5em;
+  opacity: 0.5;
 }
 
 .card__svg {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-right: 0;
+  margin-bottom: 0;
+}
+
+.card.super {
+  -webkit-box-shadow: 0 4px 12px 1px rgba(76, 78, 97, 0.2), inset 0 48px 0px -40px #45d3d3;
+          box-shadow: 0 4px 12px 1px rgba(76, 78, 97, 0.2), inset 0 48px 0px -40px #45d3d3;
+}
+
+.card.team {
+  -webkit-box-shadow: 0 4px 12px 1px rgba(76, 78, 97, 0.2), inset 0 48px 0px -40px #ea5353;
+          box-shadow: 0 4px 12px 1px rgba(76, 78, 97, 0.2), inset 0 48px 0px -40px #ea5353;
+}
+
+.card.karma {
+  -webkit-box-shadow: 0 4px 12px 1px rgba(76, 78, 97, 0.2), inset 0 48px 0px -40px #fcaf4a;
+          box-shadow: 0 4px 12px 1px rgba(76, 78, 97, 0.2), inset 0 48px 0px -40px #fcaf4a;
+}
+
+.card.calc {
+  -webkit-box-shadow: 0 4px 12px 1px rgba(76, 78, 97, 0.2), inset 0 48px 0px -40px #549ef2;
+          box-shadow: 0 4px 12px 1px rgba(76, 78, 97, 0.2), inset 0 48px 0px -40px #549ef2;
 }
 /*# sourceMappingURL=sass.css.map */
