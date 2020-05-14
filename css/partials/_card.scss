@@ -1,9 +1,10 @@
 .card {
     background-color: white;
     border-radius: 10px;
-    height: 200px;
-    width: 331px;
-    padding: 36px;
+    height: 185px;
+    width: calc(100% - 50px);
+    max-width: 331px;
+    padding: 25px;
     margin: 40px auto;
     display: flex;
     flex-direction: column;
@@ -11,13 +12,13 @@
     //
     &__content {
         color: $cs-darkBlue;
-        line-height: 1.8em;
+        line-height: 1.4em;
+        font-size: .8em;
         & p {
-            margin-top: .5em;
+            //margin-top: .5em;
             opacity: 0.5;
         }
     }
-    &__text {}
     &__svg {
         align-self: flex-end;
         margin-right: 0;
@@ -34,5 +35,22 @@
     }
     &.calc {
         @include shadowIn($cp-blue);
+    }
+}
+
+@media (min-width:$mq-md) {
+    .card {
+        margin-bottom: 0;
+        width: calc(100% - 100px);
+    }
+}
+
+@media (min-width:$mq-lg) {
+    .card {
+        margin: 15px auto;
+        &:first-child,
+        &:last-child {
+            margin-top: 150px;
+        }
     }
 }

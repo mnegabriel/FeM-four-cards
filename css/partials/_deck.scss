@@ -1,0 +1,16 @@
+@media (min-width:$mq-md) {
+    .deck {
+        display: flex;
+        flex-wrap: wrap;
+        width: 835px;
+        margin: auto;
+    }
+}
+
+@media (min-width:$mq-lg) {
+    .deck {
+        flex-direction: column;
+        height: 530px;
+        width: 1240px;
+    }
+}

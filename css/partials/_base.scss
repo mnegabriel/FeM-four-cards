@@ -4,5 +4,7 @@
 
 body {
     background-color: $cs-lightGray;
-    padding: 0 30px;
+    &>* {
+        padding: 0 30px;
+    }
 }
